@@ -76,8 +76,8 @@ export function HeroSection() {
                 </Button>
               </div>
               <p className="mt-3.5 max-w-[430px] text-pretty text-sm leading-relaxed text-navy-900/60">
-                Avaliação presencial de 50 minutos,{" "}
-                <br className="hidden md:block" />
+                Avaliação presencial de 50 minutos,
+                <br />
                 sem custo e sem compromisso.
               </p>
             </FadeIn>
