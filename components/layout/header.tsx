@@ -31,7 +31,8 @@ export function Header() {
             alt="ProLife Centro de Saúde da Mente"
             fill
             priority
-            sizes="(max-width: 768px) 108px, 118px"
+            quality={100}
+            sizes="(max-width: 768px) 216px, 236px"
             className="object-contain object-left"
           />
         </Link>
@@ -41,7 +42,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-body-sm font-semibold text-navy-900/70 transition-colors hover:text-gold-500"
+              className="text-base font-semibold text-navy-900/70 transition-colors hover:text-gold-500"
             >
               {item.label}
             </Link>

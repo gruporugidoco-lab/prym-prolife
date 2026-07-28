@@ -41,7 +41,8 @@ export function Footer() {
                 src="/images/logo-prolife-footer.png"
                 alt="ProLife Desenvolvimento Humano"
                 fill
-                sizes="(max-width: 768px) 140px, 152px"
+                quality={100}
+                sizes="(max-width: 768px) 280px, 304px"
                 className="object-contain object-left"
               />
             </Link>

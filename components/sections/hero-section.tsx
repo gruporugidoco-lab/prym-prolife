@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays } from "lucide-react";
 import { hero } from "@/lib/content";
+import { images } from "@/lib/images";
 import { WhatsAppButton } from "@/components/shared/whatsapp-button";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/shared/motion-primitives";
@@ -15,11 +16,12 @@ export function HeroSection() {
       className="relative isolate overflow-hidden"
     >
       <Image
-        src="/images/hero.png"
+        src={images.hero}
         alt=""
         aria-hidden
         fill
         priority
+        quality={92}
         sizes="100vw"
         className="pointer-events-none -z-10 object-cover object-[10%_center] max-md:object-[34%_26%] md:max-lg:object-[12%_center] lg:object-[8%_center]"
       />
