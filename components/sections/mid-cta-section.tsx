@@ -25,9 +25,9 @@ export function MidCtaSection() {
             <WhatsAppButton
               messageKey="mid-cta"
               size="lg"
-              className="h-12 gap-2 rounded-md px-6 text-sm shadow-md shadow-gold-600/20"
+              className="h-auto min-h-12 w-full gap-2 whitespace-normal rounded-md px-5 py-3 text-sm shadow-md shadow-gold-600/20 sm:w-auto sm:whitespace-nowrap sm:px-6"
             >
-              <CalendarDays className="size-4" />
+              <CalendarDays className="size-4 shrink-0" />
               {midCtaSection.cta}
             </WhatsAppButton>
           </div>

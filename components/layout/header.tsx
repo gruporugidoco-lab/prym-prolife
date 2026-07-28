@@ -87,8 +87,11 @@ export function Header() {
                 </Link>
               ))}
               <div className="mt-4 px-2">
-                <WhatsAppButton messageKey="header" className="w-full">
-                  <CalendarDays className="size-4" />
+                <WhatsAppButton
+                  messageKey="header"
+                  className="h-auto min-h-12 w-full whitespace-normal px-4 py-3"
+                >
+                  <CalendarDays className="size-4 shrink-0" />
                   Agende sua avaliação
                 </WhatsAppButton>
               </div>

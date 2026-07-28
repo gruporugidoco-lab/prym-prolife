@@ -44,7 +44,14 @@ export function IncludedSection() {
       <div className="section-container px-5 md:px-8 lg:px-12">
         <SectionHeader
           eyebrow={includedSection.eyebrow}
-          title={includedSection.title}
+          title={
+            <>
+              Cinco especialidades
+              <span className="md:hidden"> </span>
+              <span className="hidden md:inline"> - </span>
+              Um plano de 3 meses
+            </>
+          }
           subtitle={includedSection.subtitle}
           className="section-header-spacing"
           subtitleClassName="mt-3 md:mt-4"
@@ -52,8 +59,8 @@ export function IncludedSection() {
 
         <div className="section-content-gap mx-auto flex max-w-5xl flex-col items-center">
           <div className="section-content-gap flex w-full flex-col items-center lg:flex-row lg:items-stretch lg:justify-center">
-            <FadeIn className="w-full max-w-[280px]">
-              <article className="flex h-full min-h-[420px] flex-col overflow-hidden rounded-2xl bg-navy-950 shadow-lg shadow-navy-950/10">
+            <FadeIn className="w-full max-w-[320px] sm:max-w-[280px]">
+              <article className="flex h-full min-h-0 flex-col overflow-hidden rounded-2xl bg-navy-950 shadow-lg shadow-navy-950/10 sm:min-h-[420px]">
                 <div className="p-3 pb-0">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                     <PlaceholderImage
@@ -81,14 +88,14 @@ export function IncludedSection() {
               </article>
             </FadeIn>
 
-            <div className="section-content-gap grid w-full max-w-[520px] sm:grid-cols-2">
+            <div className="section-content-gap grid w-full max-w-[520px] grid-cols-1 sm:grid-cols-2">
               {includedSection.services.map((service, index) => (
                 <FadeIn key={service.id} delay={index * 0.06}>
-                  <article className="flex h-full min-h-[200px] flex-col overflow-hidden rounded-xl bg-white shadow-sm shadow-navy-950/5">
+                  <article className="flex h-full min-h-0 flex-col overflow-hidden rounded-xl bg-white shadow-sm shadow-navy-950/5 sm:min-h-[200px]">
                     <ServiceImageSlot
                       imageKey={service.imageKey}
                       alt={service.title}
-                      sizes="(max-width: 640px) 50vw, 240px"
+                      sizes="(max-width: 640px) 100vw, 240px"
                       imageClassName={
                         service.id === "yoga"
                           ? "object-[50%_42%]"

@@ -42,7 +42,7 @@ function AuthorityCard({
   return (
     <div
       className={cn(
-        "rounded-2xl bg-white p-6 shadow-md shadow-navy-950/[0.06] md:p-7",
+        "rounded-2xl bg-white p-5 shadow-md shadow-navy-950/[0.06] sm:p-6 md:p-7",
         className,
       )}
     >
@@ -207,7 +207,7 @@ export function AuthoritySection() {
                     src={item.src}
                     alt={item.label}
                     fill
-                    sizes="(max-width: 768px) 33vw, 16vw"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
                     imageClassName={
                       "imageClassName" in item ? item.imageClassName : undefined
                     }
@@ -232,7 +232,7 @@ export function AuthoritySection() {
                 <span className="h-px w-5 bg-gold-500/80" aria-hidden />
               </div>
 
-              <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4">
+              <div className="grid grid-cols-2 gap-5 sm:grid-cols-4 sm:gap-4">
                 {authoritySection.stats.map((stat, index) => {
                   const Icon = statIcons[index];
                   return (
@@ -241,16 +241,16 @@ export function AuthoritySection() {
                       className="flex flex-col items-center text-center"
                     >
                       <Icon
-                        className="mb-3 size-6 text-gold-500"
+                        className="mb-2.5 size-5 text-gold-500 sm:mb-3 sm:size-6"
                         strokeWidth={1.5}
                       />
                       <p className="text-stat-value text-navy-950">
                         {stat.value}
                       </p>
-                      <p className="text-stat-label mt-2 text-navy-950">
+                      <p className="text-stat-label mt-1.5 text-pretty text-navy-950 sm:mt-2">
                         {stat.labelPrimary}
                       </p>
-                      <p className="text-stat-accent">
+                      <p className="text-stat-accent text-pretty">
                         {stat.labelAccent}
                       </p>
                     </div>

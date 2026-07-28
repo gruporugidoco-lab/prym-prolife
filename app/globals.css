@@ -39,7 +39,7 @@
   }
 
   body {
-    @apply bg-cream-50 font-sans text-base text-navy-900 antialiased;
+    @apply overflow-x-hidden bg-cream-50 font-sans text-base text-navy-900 antialiased;
   }
 
   ::selection {
@@ -49,7 +49,7 @@
 
 @layer utilities {
   .section-padding {
-    @apply px-5 py-16 md:px-8 md:py-20 lg:px-12 lg:py-24;
+    @apply px-5 py-12 md:px-8 md:py-20 lg:px-12 lg:py-24;
   }
 
   .section-container {
@@ -73,8 +73,8 @@
   }
 
   .heading-hero {
-    font-size: clamp(2.25rem, 4.2vw, 2.875rem);
-    @apply font-serif font-bold leading-[1.08] tracking-[-0.03em];
+    font-size: clamp(1.875rem, 6.2vw, 2.875rem);
+    @apply font-serif font-bold leading-[1.1] tracking-[-0.03em] text-balance;
   }
 
   .heading-section {

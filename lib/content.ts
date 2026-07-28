@@ -76,12 +76,16 @@ export const comparisonSection = {
     "A ansiedade que tira o sono também cansa o corpo,",
   descriptionLine2:
     "o corpo cansado também pesa na mente e isso gera mais ansiedade.",
-  eyebrowLine1: "Por isso o PRYM cuida de emoções, corpo e mente",
-  eyebrowLine2: "ao mesmo tempo",
+  eyebrowLine1: "Por isso o PRYM cuida de",
+  eyebrowLine2: "emoções, corpo e mente",
+  eyebrowLine3: "ao mesmo tempo",
   consequenceLine1:
-    "Cuidar de um sintoma e deixar os outros de lado quase nunca resolve.",
+    "Cuidar de um sintoma e deixar",
   consequenceLine2:
-    "Veja a diferença entre o tratamento convencional e o PRYM.",
+    "os outros de lado quase nunca resolve.",
+  consequenceLine3:
+    "Veja a diferença entre o tratamento convencional",
+  consequenceLine4: "e o PRYM.",
   traditional: {
     title: "Tratamento Convencional",
     items: [
@@ -405,9 +409,10 @@ export const faqSection = {
 
 export const finalCtaSection = {
   eyebrow: "Primeiro passo",
-  title: "Você já tentou uma parte. Agora falta o conjunto.",
+  title: "Se isso fez sentido,",
+  titleLine2: "vamos conversar.",
   subtitle:
-    "Comece pela avaliação gratuita: 50 minutos, presencial, sem compromisso. Nossa equipe agenda o seu horário pelo WhatsApp.",
+    "Fale com a equipe da ProLife pelo WhatsApp e agende sua avaliação presencial gratuita.",
   cta: "Quero agendar minha avaliação gratuita",
 };
 

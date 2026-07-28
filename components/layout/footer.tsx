@@ -15,6 +15,8 @@ export function Footer() {
           <div>
             <h2 className="heading-footer max-w-xl">
               {finalCtaSection.title}
+              <br />
+              {finalCtaSection.titleLine2}
             </h2>
             <p className="text-footer-body mt-4 max-w-lg">
               {finalCtaSection.subtitle}
@@ -23,10 +25,10 @@ export function Footer() {
               <WhatsAppButton
                 messageKey="final-cta"
                 size="lg"
-                className="h-12 gap-2 rounded-md px-6 text-sm shadow-md shadow-gold-600/20"
+                className="h-auto min-h-12 w-full gap-2 whitespace-normal rounded-md px-5 py-3 text-sm shadow-md shadow-gold-600/20 sm:w-auto sm:whitespace-nowrap sm:px-6"
               >
                 {finalCtaSection.cta}
-                <CalendarDays className="size-4" />
+                <CalendarDays className="size-4 shrink-0" />
               </WhatsAppButton>
             </div>
           </div>

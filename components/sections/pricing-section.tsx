@@ -20,7 +20,7 @@ export function PricingSection() {
           </h2>
         </FadeIn>
 
-        <FadeIn className="mx-auto max-w-2xl rounded-2xl border border-navy-900/8 bg-white p-6 text-center md:p-8">
+        <FadeIn className="mx-auto max-w-2xl rounded-2xl border border-navy-900/8 bg-white p-5 text-center sm:p-6 md:p-8">
           <p className="text-label">{pricingSection.planLabel}</p>
           <p className="heading-display mt-2 text-navy-950">
             {pricingSection.planPrice}
@@ -70,7 +70,7 @@ export function PricingSection() {
             <WhatsAppButton
               messageKey="pricing"
               size="lg"
-              className="h-12 w-full rounded-md px-6 text-sm shadow-md shadow-gold-600/20 sm:w-auto"
+              className="h-auto min-h-12 w-full whitespace-normal rounded-md px-5 py-3 text-sm shadow-md shadow-gold-600/20 sm:w-auto sm:whitespace-nowrap sm:px-6"
             >
               {pricingSection.cta}
             </WhatsAppButton>

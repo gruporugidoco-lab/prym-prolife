@@ -50,11 +50,11 @@ export function ProblemsSection() {
           <FadeIn delay={0.08} className="mx-auto mt-6 max-w-5xl md:mt-8">
             <aside
               aria-label="Ciclo entre emoções, corpo e mente"
-              className="relative overflow-hidden rounded-xl border border-gold-500/25 bg-white/[0.025] px-5 py-6 sm:px-8 sm:py-7"
+              className="relative overflow-hidden rounded-xl border border-gold-500/25 bg-white/[0.025] px-4 py-5 sm:px-8 sm:py-7"
             >
               <div className="relative mx-auto flex max-w-2xl flex-col items-center text-center">
                 <div
-                  className="flex w-full flex-wrap items-center justify-center gap-2 sm:gap-3"
+                  className="flex w-full flex-wrap items-center justify-center gap-1.5 sm:gap-3"
                   role="img"
                   aria-label="Emoções, corpo e mente se alimentando em ciclo"
                 >
@@ -64,28 +64,31 @@ export function ProblemsSection() {
                       index === comparisonSection.connectionNodes.length - 1;
 
                     return (
-                      <div key={node.label} className="flex items-center gap-2 sm:gap-3">
+                      <div
+                        key={node.label}
+                        className="flex items-center gap-1.5 sm:gap-3"
+                      >
                         <span
-                          className={`inline-flex items-center rounded-full border px-3.5 py-1.5 text-xs font-semibold tracking-wide sm:px-4 sm:text-[13px] ${styles.node}`}
+                          className={`inline-flex items-center rounded-full border px-2.5 py-1.5 text-[11px] font-semibold tracking-wide sm:px-4 sm:text-[13px] ${styles.node}`}
                         >
                           {node.label}
                         </span>
 
                         {!isLast ? (
                           <ArrowRight
-                            className="size-4 shrink-0 text-white/35"
+                            className="size-3.5 shrink-0 text-white/35 sm:size-4"
                             strokeWidth={1.75}
                             aria-hidden
                           />
                         ) : (
                           <>
                             <RefreshCw
-                              className="size-4 shrink-0 text-gold-400"
+                              className="size-3.5 shrink-0 text-gold-400 sm:size-4"
                               strokeWidth={1.75}
                               aria-hidden
                             />
                             <span
-                              className={`inline-flex items-center rounded-full border px-3.5 py-1.5 text-xs font-semibold tracking-wide sm:px-4 sm:text-[13px] ${areaStyles.Emoções.node}`}
+                              className={`inline-flex items-center rounded-full border px-2.5 py-1.5 text-[11px] font-semibold tracking-wide sm:px-4 sm:text-[13px] ${areaStyles.Emoções.node}`}
                             >
                               Emoções
                             </span>
@@ -111,7 +114,7 @@ export function ProblemsSection() {
             const styles = areaStyles[item.area as keyof typeof areaStyles];
             return (
               <FadeIn key={item.title} delay={index * 0.06}>
-                <article className="flex h-full gap-4 rounded-lg border border-white/12 bg-white/[0.025] p-5 transition-colors duration-300 hover:border-white/22">
+                <article className="flex h-full gap-3.5 rounded-lg border border-white/12 bg-white/[0.025] p-4 transition-colors duration-300 hover:border-white/22 sm:gap-4 sm:p-5">
                   <div
                     className={`inline-flex size-10 shrink-0 items-center justify-center rounded-lg ${styles.icon}`}
                   >
@@ -142,19 +145,25 @@ export function ProblemsSection() {
             <p className="heading-subsection text-white">
               {comparisonSection.eyebrowLine1}
               <br />
-              <span className="text-gold-400">{comparisonSection.eyebrowLine2}</span>
+              {comparisonSection.eyebrowLine2}
+              <br />
+              <span className="text-gold-400">{comparisonSection.eyebrowLine3}</span>
             </p>
             <p className="text-body mx-auto mt-4 max-w-2xl text-white/72 md:mt-5">
               {comparisonSection.consequenceLine1}
               <br />
               {comparisonSection.consequenceLine2}
+              <br />
+              {comparisonSection.consequenceLine3}
+              <br />
+              {comparisonSection.consequenceLine4}
             </p>
           </FadeIn>
         </div>
 
         <div className="relative mx-auto mt-10 grid max-w-3xl gap-4 md:mt-12 md:grid-cols-2">
           <FadeIn>
-            <div className="h-full rounded-lg bg-white p-6 text-navy-950 shadow-lg">
+            <div className="h-full rounded-lg bg-white p-5 text-navy-950 shadow-lg sm:p-6">
               <h3 className="heading-card text-navy-800">
                 {comparisonSection.traditional.title}
               </h3>
@@ -181,7 +190,7 @@ export function ProblemsSection() {
           </div>
 
           <FadeIn delay={0.1}>
-            <div className="h-full rounded-lg bg-white p-6 shadow-xl">
+            <div className="h-full rounded-lg bg-white p-5 shadow-xl sm:p-6">
               <h3 className="heading-card text-navy-950">
                 {comparisonSection.prym.title}
               </h3>

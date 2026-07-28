@@ -28,6 +28,8 @@ export function FinalCtaSection() {
         <FadeIn className="navy-gradient flex flex-col justify-center p-10 md:p-12 lg:p-16">
           <h2 className="heading-section text-balance text-white">
             {finalCtaSection.title}
+            <br />
+            {finalCtaSection.titleLine2}
           </h2>
           <p className="mt-5 leading-relaxed text-white/70 md:mt-6">
             {finalCtaSection.subtitle}

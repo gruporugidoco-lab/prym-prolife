@@ -23,16 +23,16 @@ export function WhatsAppFloat() {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 1, duration: 0.4 }}
-      className="fixed bottom-6 right-6 z-50"
+      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-50 md:bottom-6 md:right-6"
     >
       <Link
         href={getWhatsAppUrl("floating")}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="group flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-[#25D366]/30 transition-transform duration-300 hover:scale-105"
+        className="group flex size-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/25 transition-transform duration-300 hover:scale-105 md:size-11"
       >
-        <WhatsAppIcon className="size-7 transition-transform group-hover:scale-110" />
+        <WhatsAppIcon className="size-6 transition-transform group-hover:scale-110 md:size-5" />
       </Link>
     </motion.div>
   );
