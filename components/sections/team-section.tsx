@@ -27,7 +27,7 @@ export function TeamSection() {
               className="mb-6"
             />
             <FadeIn>
-              <p className="text-base leading-relaxed text-navy-900/65">
+              <p className="text-body text-navy-900/65">
                 {teamSection.description}
               </p>
             </FadeIn>

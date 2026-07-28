@@ -17,6 +17,8 @@ export function PricingSection() {
             {pricingSection.title}
             <br />
             {pricingSection.titleLine2}
+            <br className="md:hidden" />{" "}
+            {pricingSection.titleLine3}
           </h2>
         </FadeIn>
 

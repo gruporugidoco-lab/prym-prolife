@@ -19,7 +19,7 @@ export function FinalCtaSection() {
             className="h-full"
           />
           <div className="absolute inset-0 flex items-end bg-gradient-to-t from-navy-950/70 via-navy-950/10 to-transparent p-10 md:p-12">
-            <p className="font-serif text-lg italic text-white">
+            <p className="font-serif text-base italic text-white sm:text-lg">
               {finalCtaSection.eyebrow}
             </p>
           </div>
@@ -31,17 +31,19 @@ export function FinalCtaSection() {
             <br />
             {finalCtaSection.titleLine2}
           </h2>
-          <p className="mt-5 leading-relaxed text-white/70 md:mt-6">
+          <p className="text-footer-body mt-5 md:mt-6">
             {finalCtaSection.subtitle}
+            <br />
+            {finalCtaSection.subtitleLine2}
           </p>
           <div className="mt-8 rounded-xl border border-white/10 bg-white/[0.04] p-5 md:mt-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-400">
+            <p className="text-label text-gold-400">
               {pricingSection.planLabel}
             </p>
-            <p className="mt-2 font-serif text-2xl text-white">
+            <p className="mt-2 font-serif text-xl text-white sm:text-2xl">
               {pricingSection.planPrice}
             </p>
-            <p className="text-xs text-white/55">{pricingSection.coupleNote}</p>
+            <p className="text-caption text-white/55">{pricingSection.coupleNote}</p>
           </div>
           <div className="mt-10 md:mt-12">
             <WhatsAppButton messageKey="final-cta" size="lg">

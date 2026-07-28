@@ -35,7 +35,7 @@ export function DifferentialsSection() {
                 <span className="flex size-14 items-center justify-center rounded-full bg-orange-100 text-orange-500">
                   <Icon className="size-6" strokeWidth={1.5} />
                 </span>
-                <p className="text-sm font-medium leading-snug text-navy-950">
+                <p className="text-body-sm font-medium leading-snug text-navy-950">
                   {item.title}
                 </p>
               </FadeIn>

@@ -20,6 +20,8 @@ export function Footer() {
             </h2>
             <p className="text-footer-body mt-4 max-w-lg">
               {finalCtaSection.subtitle}
+              <br />
+              {finalCtaSection.subtitleLine2}
             </p>
             <div className="mt-8">
               <WhatsAppButton

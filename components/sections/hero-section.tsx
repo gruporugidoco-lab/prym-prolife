@@ -23,7 +23,7 @@ export function HeroSection() {
         priority
         quality={100}
         sizes="100vw"
-        className="pointer-events-none -z-10 object-cover object-[48%_center] max-md:object-[58%_22%] md:max-lg:object-[52%_center] lg:object-[46%_center]"
+        className="pointer-events-none -z-10 object-cover object-[48%_center] max-md:object-[38%_22%] md:max-lg:object-[52%_center] lg:object-[46%_center]"
       />
       <div
         aria-hidden

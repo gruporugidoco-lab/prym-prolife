@@ -333,7 +333,8 @@ export const authoritySection = {
 export const pricingSection = {
   eyebrow: "Investimento",
   title: "O programa dura 3 meses.",
-  titleLine2: "O valor pode ser dividido em até 12 vezes.",
+  titleLine2: "O valor pode ser dividido",
+  titleLine3: "em até 12 vezes.",
   highlightsLabel: "Do programa",
   highlights: [
     "3 meses de programa",
@@ -411,8 +412,8 @@ export const finalCtaSection = {
   eyebrow: "Primeiro passo",
   title: "Se isso fez sentido,",
   titleLine2: "vamos conversar.",
-  subtitle:
-    "Fale com a equipe da ProLife pelo WhatsApp e agende sua avaliação presencial gratuita.",
+  subtitle: "Fale com a equipe da ProLife pelo WhatsApp",
+  subtitleLine2: "e agende sua avaliação presencial gratuita.",
   cta: "Quero agendar minha avaliação gratuita",
 };
 

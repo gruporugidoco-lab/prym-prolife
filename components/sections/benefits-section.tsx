@@ -22,7 +22,7 @@ export function BenefitsSection() {
             <FadeIn key={benefit} delay={index * 0.05}>
               <article className="flex h-full items-start gap-3 rounded-xl border border-navy-900/8 bg-cream-50 p-5 transition-colors duration-300 hover:border-gold-500/25">
                 <CheckCircle2 className="size-5 shrink-0 text-gold-500" />
-                <p className="text-sm font-medium leading-snug text-navy-950">
+                <p className="text-body-sm font-medium leading-snug text-navy-950">
                   {benefit}
                 </p>
               </article>

@@ -33,7 +33,7 @@ export function Header() {
             height={88}
             priority
             unoptimized
-            className="h-10 w-auto object-contain object-left md:h-11"
+            className="h-12 w-auto object-contain object-left md:h-11"
           />
         </Link>
 
@@ -42,7 +42,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-base font-semibold text-navy-900/70 transition-colors hover:text-gold-500"
+              className="text-[0.9375rem] font-semibold text-navy-900/70 transition-colors hover:text-gold-500 sm:text-base"
             >
               {item.label}
             </Link>
