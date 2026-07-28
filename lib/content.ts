@@ -87,7 +87,7 @@ export const comparisonSection = {
       "Consulta isolada",
       "Um profissional",
       "Foco no sintoma",
-      "Uma frente por vez",
+      "Consulta esporádica",
       "Sem atividades",
       "Sem medida de evolução",
     ],
@@ -304,7 +304,7 @@ export const authoritySection = {
   subtitle:
     "Centro de Saúde da Mente com ambiente seguro, acolhedor e humanizado.",
   stats: [
-    { value: "15+", labelPrimary: "anos", labelAccent: "de clínica" },
+    { value: "18", labelPrimary: "anos", labelAccent: "de clínica" },
     { value: "20+", labelPrimary: "profissionais", labelAccent: "na equipe" },
     { value: "55+", labelPrimary: "áreas", labelAccent: "de atuação" },
     { value: "4,9/5", labelPrimary: "nota", labelAccent: "no Google" },
