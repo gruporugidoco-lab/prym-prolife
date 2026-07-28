@@ -143,21 +143,15 @@ export function ProblemsSection() {
 
         <div className="mx-auto mt-16 max-w-4xl text-center md:mt-20 lg:mt-24">
           <FadeIn>
-            <p className="heading-subsection text-white">
-              {comparisonSection.eyebrowLine1}
-              <br />
-              {comparisonSection.eyebrowLine2}
-              <br />
-              <span className="text-gold-400">{comparisonSection.eyebrowLine3}</span>
+            <p className="text-eyebrow text-gold-400">
+              {comparisonSection.bridgeEyebrow}
+            </p>
+            <p className="heading-subsection mt-3 text-white md:mt-4">
+              {comparisonSection.bridgeTitle}
             </p>
             <p className="text-body mx-auto mt-4 max-w-2xl text-white/72 md:mt-5">
-              {comparisonSection.consequenceLine1}
-              <br />
+              {comparisonSection.consequenceLine1}{" "}
               {comparisonSection.consequenceLine2}
-              <br />
-              {comparisonSection.consequenceLine3}
-              <br />
-              {comparisonSection.consequenceLine4}
             </p>
           </FadeIn>
         </div>

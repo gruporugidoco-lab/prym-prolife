@@ -51,7 +51,7 @@ export function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.16}>
-              <p className="text-lead mt-5 max-w-[470px] text-pretty text-navy-900/70 md:mt-6 lg:mt-5">
+              <p className="text-lead mt-5 max-w-[470px] pr-8 text-pretty text-navy-900/70 md:mt-6 lg:mt-5">
                 {hero.subheadline}
               </p>
             </FadeIn>

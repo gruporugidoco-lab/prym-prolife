@@ -76,16 +76,11 @@ export const comparisonSection = {
     "A ansiedade que tira o sono também cansa o corpo, o corpo cansado",
   descriptionLine2:
     "também pesa na mente e isso gera mais ansiedade.",
-  eyebrowLine1: "Por isso o PRYM cuida de",
-  eyebrowLine2: "emoções, corpo e mente",
-  eyebrowLine3: "ao mesmo tempo",
+  bridgeEyebrow: "Se você se identificou com esses sintomas",
+  bridgeTitle: "O PRYM foi feito especialmente para você",
   consequenceLine1:
-    "Cuidar de um sintoma e deixar",
-  consequenceLine2:
-    "os outros de lado quase nunca resolve.",
-  consequenceLine3:
     "Veja a diferença entre o tratamento convencional",
-  consequenceLine4: "e o PRYM.",
+  consequenceLine2: "e o PRYM.",
   traditional: {
     title: "Tratamento Convencional",
     items: [
