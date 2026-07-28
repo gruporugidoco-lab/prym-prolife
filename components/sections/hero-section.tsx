@@ -21,9 +21,9 @@ export function HeroSection() {
         aria-hidden
         fill
         priority
-        quality={92}
+        quality={100}
         sizes="100vw"
-        className="pointer-events-none -z-10 object-cover object-[10%_center] max-md:object-[34%_26%] md:max-lg:object-[12%_center] lg:object-[8%_center]"
+        className="pointer-events-none -z-10 object-cover object-[48%_center] max-md:object-[70%_28%] md:max-lg:object-[52%_center] lg:object-[46%_center]"
       />
       <div className="section-container px-5 pb-12 pt-10 md:px-8 md:pb-14 md:pt-12 lg:px-12 lg:pb-20 lg:pt-16">
         <div className="grid items-center gap-6 lg:min-h-[360px] lg:grid-cols-[45fr_55fr] lg:gap-8">

@@ -34,16 +34,16 @@ export function Footer() {
           <div className="border-t border-white/12 pt-10 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0">
             <Link
               href="#"
-              className="relative block h-10 w-[140px] overflow-hidden md:h-11 md:w-[152px]"
+              className="block"
               aria-label="ProLife Desenvolvimento Humano"
             >
               <Image
                 src="/images/logo-prolife-footer.png"
                 alt="ProLife Desenvolvimento Humano"
-                fill
-                quality={100}
-                sizes="(max-width: 768px) 280px, 304px"
-                className="object-contain object-left"
+                width={304}
+                height={94}
+                unoptimized
+                className="h-10 w-auto object-contain object-left md:h-11"
               />
             </Link>
 

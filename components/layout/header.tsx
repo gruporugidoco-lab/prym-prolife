@@ -23,17 +23,17 @@ export function Header() {
       <div className="section-container flex items-center justify-between px-5 md:px-8 lg:px-12">
         <Link
           href="#"
-          className="group relative block h-10 w-[108px] transition-opacity hover:opacity-85 md:h-11 md:w-[118px]"
+          className="group block transition-opacity hover:opacity-85"
           aria-label="ProLife Centro de Saúde da Mente"
         >
           <Image
             src="/images/logo-prolife.png"
             alt="ProLife Centro de Saúde da Mente"
-            fill
+            width={236}
+            height={88}
             priority
-            quality={100}
-            sizes="(max-width: 768px) 216px, 236px"
-            className="object-contain object-left"
+            unoptimized
+            className="h-10 w-auto object-contain object-left md:h-11"
           />
         </Link>
 

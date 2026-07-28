@@ -1,5 +1,5 @@
 export const images = {
-  hero: "/images/hero.png",
+  hero: "/images/hero.jpg",
   idosoCasal: "/images/idoso-casal.jpg",
   psicoterapia: "/images/psicoterapia.png",
   massoterapia: "/images/massoterapia.png",
