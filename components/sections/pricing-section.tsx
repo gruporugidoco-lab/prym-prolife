@@ -79,7 +79,9 @@ export function PricingSection() {
           </div>
 
           <p className="text-caption mx-auto mt-3.5 max-w-md text-navy-900/55">
-            {pricingSection.microcopy}
+            {pricingSection.microcopyLine1}
+            <br />
+            {pricingSection.microcopyLine2}
           </p>
 
           <p className="text-body-sm mt-6 border-t border-navy-900/8 pt-5 text-navy-900/60">

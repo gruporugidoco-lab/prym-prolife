@@ -72,10 +72,10 @@ export const comparisonSection = {
     { label: "Corpo", area: "Corpo" as const },
     { label: "Mente", area: "Mente" as const },
   ],
-  descriptionLine1:
-    "A ansiedade que tira o sono também cansa o corpo, o corpo cansado",
-  descriptionLine2:
-    "também pesa na mente e isso gera mais ansiedade.",
+  descriptionLine1: "A ansiedade que tira o sono",
+  descriptionLine2: "também cansa o corpo, o corpo cansado",
+  descriptionLine3: "também pesa na mente e isso gera",
+  descriptionLine4: "mais ansiedade e outros sintomas.",
   bridgeEyebrow: "Se você se identificou com esses sintomas",
   bridgeTitle: "O PRYM foi feito especialmente para você",
   consequenceLine1:
@@ -352,8 +352,9 @@ export const pricingSection = {
   coupleNote:
     "Existe também o Plano Casal 60+, para quem quer fazer o programa junto.",
   cta: "Quero conhecer o investimento",
-  microcopy:
-    "A avaliação inicial é gratuita. As condições de pagamento você combina direto com a nossa equipe.",
+  microcopyLine1: "A avaliação inicial é gratuita.",
+  microcopyLine2:
+    "As condições de pagamento você combina direto com a nossa equipe.",
 };
 
 export const faqSection = {
