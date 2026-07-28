@@ -201,8 +201,8 @@ export function AuthoritySection() {
         <div className="section-content-gap grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
           {galleryImages.map((item, index) => (
             <FadeIn key={item.label} delay={index * 0.05}>
-              <figure className="overflow-hidden rounded-xl">
-                <div className="relative aspect-[4/3]">
+              <figure>
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                   <PlaceholderImage
                     src={item.src}
                     alt={item.label}
@@ -213,7 +213,7 @@ export function AuthoritySection() {
                     }
                   />
                 </div>
-                <figcaption className="text-caption-muted mt-3 text-center text-navy-900/55">
+                <figcaption className="text-caption-muted mt-3 px-1 text-center text-navy-900/55">
                   {item.label}
                 </figcaption>
               </figure>

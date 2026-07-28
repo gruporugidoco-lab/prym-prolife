@@ -100,7 +100,8 @@ export function ProblemsSection() {
                 </div>
 
                 <p className="text-body-sm mx-auto mt-4 max-w-lg text-pretty text-white/72 md:mt-5">
-                  {comparisonSection.descriptionLine1}{" "}
+                  {comparisonSection.descriptionLine1}
+                  <br />
                   {comparisonSection.descriptionLine2}
                 </p>
               </div>

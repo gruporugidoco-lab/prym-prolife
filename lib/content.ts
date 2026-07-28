@@ -73,9 +73,9 @@ export const comparisonSection = {
     { label: "Mente", area: "Mente" as const },
   ],
   descriptionLine1:
-    "A ansiedade que tira o sono também cansa o corpo,",
+    "A ansiedade que tira o sono também cansa o corpo, o corpo cansado",
   descriptionLine2:
-    "o corpo cansado também pesa na mente e isso gera mais ansiedade.",
+    "também pesa na mente e isso gera mais ansiedade.",
   eyebrowLine1: "Por isso o PRYM cuida de",
   eyebrowLine2: "emoções, corpo e mente",
   eyebrowLine3: "ao mesmo tempo",

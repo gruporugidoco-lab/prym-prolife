@@ -76,7 +76,9 @@ export function HeroSection() {
                 </Button>
               </div>
               <p className="mt-3.5 max-w-[430px] text-pretty text-sm leading-relaxed text-navy-900/60">
-                {hero.ctaMicrocopy}
+                Avaliação presencial de 50 minutos,{" "}
+                <br className="hidden md:block" />
+                sem custo e sem compromisso.
               </p>
             </FadeIn>
           </div>
