@@ -69,7 +69,7 @@ function GoogleReviewCard({
   const isLong = quote.length > 140;
 
   return (
-    <blockquote className="flex flex-col rounded-xl bg-cream-50 p-4">
+    <blockquote className="flex h-full flex-col rounded-xl bg-cream-50 p-4">
       <div className="flex items-center gap-0.5" aria-label="5 de 5 estrelas">
         {Array.from({ length: 5 }).map((_, index) => (
           <Star
@@ -81,22 +81,26 @@ function GoogleReviewCard({
       </div>
       <p
         className={cn(
-          "text-body-sm mt-2.5 italic text-navy-900/70",
-          !expanded && isLong && "line-clamp-4",
+          "text-body-sm mt-2.5 min-h-[4lh] italic text-navy-900/70",
+          expanded
+            ? "max-h-[4lh] overflow-y-auto"
+            : "line-clamp-4",
         )}
       >
         &ldquo;{quote}&rdquo;
       </p>
-      {isLong && (
-        <button
-          type="button"
-          onClick={onToggle}
-          className="text-caption mt-1.5 self-start font-medium text-gold-600 transition-colors hover:text-gold-500"
-        >
-          {expanded ? "Ver menos" : "Ver mais"}
-        </button>
-      )}
-      <footer className="mt-3 border-t border-navy-900/8 pt-3">
+      <div className="mt-1.5 flex h-5 items-center">
+        {isLong ? (
+          <button
+            type="button"
+            onClick={onToggle}
+            className="text-caption font-medium text-gold-600 transition-colors hover:text-gold-500"
+          >
+            {expanded ? "Ver menos" : "Ver mais"}
+          </button>
+        ) : null}
+      </div>
+      <footer className="mt-auto border-t border-navy-900/8 pt-3">
         <cite className="not-italic">
           <p className="text-body-sm font-semibold text-navy-950">{author}</p>
           <p className="text-caption mt-0.5 text-navy-900/60">{source}</p>
@@ -126,9 +130,14 @@ function GoogleReviewsCarousel() {
     }));
   };
 
+  const goToPage = (nextPage: number) => {
+    setPage(nextPage);
+    setExpandedAuthors({});
+  };
+
   return (
     <div>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid auto-rows-fr gap-4 sm:grid-cols-2">
         {visibleItems.map((item) => (
           <GoogleReviewCard
             key={item.author}
@@ -147,7 +156,7 @@ function GoogleReviewsCarousel() {
             type="button"
             aria-label="Avaliações anteriores"
             disabled={page === 0}
-            onClick={() => setPage((current) => current - 1)}
+            onClick={() => goToPage(page - 1)}
             className="inline-flex size-9 items-center justify-center rounded-full border border-navy-900/10 text-navy-900/70 transition-colors hover:border-gold-500/40 hover:text-gold-600 disabled:pointer-events-none disabled:opacity-35"
           >
             <ChevronLeft className="size-4" strokeWidth={2} />
@@ -159,7 +168,7 @@ function GoogleReviewsCarousel() {
             type="button"
             aria-label="Próximas avaliações"
             disabled={page === pageCount - 1}
-            onClick={() => setPage((current) => current + 1)}
+            onClick={() => goToPage(page + 1)}
             className="inline-flex size-9 items-center justify-center rounded-full border border-navy-900/10 text-navy-900/70 transition-colors hover:border-gold-500/40 hover:text-gold-600 disabled:pointer-events-none disabled:opacity-35"
           >
             <ChevronRight className="size-4" strokeWidth={2} />

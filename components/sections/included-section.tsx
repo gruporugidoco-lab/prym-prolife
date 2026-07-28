@@ -37,8 +37,11 @@ export function IncludedSection() {
   const { featuredService } = includedSection;
 
   return (
-    <section id="incluso" className="section-padding !pb-8 bg-cream-50 md:!pb-10 lg:!pb-12">
-      <div className="section-container">
+    <section
+      id="incluso"
+      className="bg-cream-50 pt-16 md:pt-20 lg:pt-24"
+    >
+      <div className="section-container px-5 md:px-8 lg:px-12">
         <SectionHeader
           eyebrow={includedSection.eyebrow}
           title={includedSection.title}
@@ -110,10 +113,19 @@ export function IncludedSection() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
 
-          <div id="como-funciona" className="mt-4 w-full scroll-mt-24 md:mt-6">
-            <HowItWorksStrip />
-          </div>
+      <div
+        id="como-funciona"
+        className="relative mt-10 w-full scroll-mt-24 md:mt-12 lg:mt-14"
+      >
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-0 top-1/2 bg-white"
+        />
+        <div className="relative">
+          <HowItWorksStrip />
         </div>
       </div>
     </section>

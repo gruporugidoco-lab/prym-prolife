@@ -26,17 +26,45 @@ export function PricingSection() {
             {pricingSection.planPrice}
           </p>
 
-          <ul className="mx-auto mt-7 flex w-fit max-w-full flex-col gap-3 border-t border-navy-900/8 pt-7">
-            {pricingSection.highlights.map((highlight) => (
-              <li
-                key={highlight}
-                className="text-body-sm flex items-start gap-2.5 text-left text-navy-900/70"
-              >
-                <Check className="mt-0.5 size-4 shrink-0 text-gold-500" />
-                <span>{highlight}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="mx-auto mt-7 w-fit max-w-full border-t border-navy-900/8 pt-7 text-left">
+            <p className="text-label mb-3 text-center text-gold-600">
+              {pricingSection.highlightsLabel}
+            </p>
+            <ul className="flex flex-col gap-2.5">
+              {pricingSection.highlights.map((highlight) => (
+                <li
+                  key={highlight}
+                  className="text-body flex items-start gap-2.5 text-navy-950"
+                >
+                  <Check
+                    className="mt-0.5 size-4 shrink-0 text-gold-500"
+                    strokeWidth={2.5}
+                    aria-hidden
+                  />
+                  <span>{highlight}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="text-label mb-3 mt-6 text-center text-gold-600">
+              {pricingSection.specialtiesLabel}
+            </p>
+            <ul className="flex flex-col gap-2.5">
+              {pricingSection.specialties.map((item) => (
+                <li
+                  key={item}
+                  className="text-body flex items-start gap-2.5 text-navy-900/75"
+                >
+                  <Check
+                    className="mt-0.5 size-4 shrink-0 text-gold-500"
+                    strokeWidth={2.5}
+                    aria-hidden
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           <div className="mt-8">
             <WhatsAppButton

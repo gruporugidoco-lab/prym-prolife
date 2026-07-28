@@ -13,6 +13,8 @@ export function BenefitsSection() {
           title={benefitsSection.title}
           subtitle={benefitsSection.subtitle}
           className="mb-12"
+          eyebrowClassName="mb-2"
+          subtitleClassName="mt-3 md:mt-4"
         />
 
         <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-4">

@@ -38,6 +38,7 @@ interface SectionHeaderProps {
   align?: "left" | "center";
   light?: boolean;
   className?: string;
+  eyebrowClassName?: string;
   subtitleClassName?: string;
 }
 
@@ -48,6 +49,7 @@ export function SectionHeader({
   align = "center",
   light = false,
   className,
+  eyebrowClassName,
   subtitleClassName,
 }: SectionHeaderProps) {
   return (
@@ -62,7 +64,8 @@ export function SectionHeader({
         <p
           className={cn(
             "text-eyebrow mb-4 font-semibold tracking-[0.18em]",
-            light ? "text-gold-400" : "text-gold-500"
+            light ? "text-gold-400" : "text-gold-500",
+            eyebrowClassName
           )}
         >
           {eyebrow}

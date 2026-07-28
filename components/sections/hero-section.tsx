@@ -66,7 +66,7 @@ export function HeroSection() {
                   size="sm"
                   className="h-11 rounded-md border-navy-900/20 px-5 text-sm shadow-sm hover:-translate-y-0.5 hover:bg-white"
                 >
-                  <Link href="#desafios">{hero.secondaryCta}</Link>
+                  <Link href="#incluso">{hero.secondaryCta}</Link>
                 </Button>
               </div>
               <p className="text-body-sm mt-3.5 max-w-[430px] text-navy-900/60">

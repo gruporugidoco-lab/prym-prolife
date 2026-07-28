@@ -24,14 +24,14 @@ export const hero = {
   subheadline:
     "O PRYM 60+ trata corpo, mente e emoções de forma integrada, para você ter mais qualidade de vida depois dos 60.",
   primaryCta: "Quero agendar uma avaliação gratuita",
-  secondaryCta: "Entenda o porquê ↓",
+  secondaryCta: "Conheça o programa ↓",
   ctaMicrocopy:
     "Avaliação presencial de 50 minutos, sem custo e sem compromisso.",
 };
 
 export const problemsSection = {
-  eyebrow: "O que você sente hoje",
-  title: "Quase ninguém sente só um desses. Costumam vir vários juntos:",
+  eyebrow: "Por trás dos sintomas",
+  title: "Um ciclo que se alimenta",
   items: [
     {
       title: "Perda de motivação",
@@ -67,15 +67,21 @@ export const problemsSection = {
 };
 
 export const comparisonSection = {
-  connectionCardTitle: "Um ciclo que se alimenta",
+  connectionNodes: [
+    { label: "Emoções", area: "Emoções" as const },
+    { label: "Corpo", area: "Corpo" as const },
+    { label: "Mente", area: "Mente" as const },
+  ],
   descriptionLine1:
     "A ansiedade que tira o sono também cansa o corpo,",
   descriptionLine2:
     "o corpo cansado também pesa na mente e isso gera mais ansiedade.",
-  eyebrowLine1: "Por isso o PRYM trata os três",
-  eyebrowLine2: "na mesma semana",
-  consequenceLine1: "Toda semana, uma sessão de acompanhamento emocional.",
-  consequenceLine2: "Mais uma sessão de outra especialidade, que se alterna.",
+  eyebrowLine1: "Por isso o PRYM cuida de emoções, corpo e mente",
+  eyebrowLine2: "ao mesmo tempo",
+  consequenceLine1:
+    "Cuidar de um sintoma e deixar os outros de lado quase nunca resolve.",
+  consequenceLine2:
+    "Veja a diferença entre o tratamento convencional e o PRYM.",
   traditional: {
     title: "Tratamento Convencional",
     items: [
@@ -101,9 +107,10 @@ export const comparisonSection = {
 };
 
 export const includedSection = {
-  eyebrow: "As 5 especialidades do programa",
-  title: "Cada área cuidada por quem entende dela.",
-  subtitle: "Emoções, corpo e mente — cada uma com um profissional especializado.",
+  eyebrow: "O que está incluso",
+  title: "Cinco especialidades - Um plano de 3 meses",
+  subtitle:
+    "Duas sessões por semana, montadas a partir da sua avaliação — não um pacote genérico.",
   featuredService: {
     title: "Acompanhamento emocional",
     eyebrow: "Emoções",
@@ -186,12 +193,18 @@ export const howItWorksSection = {
     },
     {
       step: "03",
-      title: "2 sessões por semana",
+      title: "2 Sessões por semana",
       description:
         "Uma de acompanhamento emocional, outra de especialidade alternada.",
     },
     {
       step: "04",
+      title: "Acompanhamento integrado",
+      description:
+        "Os profissionais se alinham com o que acontece em cada especialidade — um só olhar sobre o seu caso.",
+    },
+    {
+      step: "05",
       title: "Avaliações de progresso",
       description: "Acompanhamento que mostra a sua evolução durante o programa.",
     },
@@ -199,10 +212,9 @@ export const howItWorksSection = {
 };
 
 export const midCtaSection = {
-  title: "Você já tentou tratar uma parte",
-  titleEmphasis: "Falta tentar o conjunto",
-  subtitle:
-    "O primeiro passo é a avaliação: presencial, 50 minutos,",
+  title: "Você já tentou uma parte.",
+  titleEmphasis: "Agora falta o conjunto.",
+  subtitle: "O próximo passo é simples: avaliação presencial de 50 minutos,",
   subtitleLine2: "sem custo e sem compromisso.",
   cta: "Quero agendar minha avaliação gratuita",
   microcopy: "Você fala direto com a nossa equipe pelo WhatsApp.",
@@ -296,11 +308,11 @@ export const authoritySection = {
     { value: "15+", labelPrimary: "anos", labelAccent: "de clínica" },
     { value: "20+", labelPrimary: "profissionais", labelAccent: "na equipe" },
     { value: "55+", labelPrimary: "áreas", labelAccent: "de atuação" },
-    { value: "4,9", labelPrimary: "nota", labelAccent: "no Google" },
+    { value: "4,9/5", labelPrimary: "nota", labelAccent: "no Google" },
   ],
   googleRating: {
     title: "Avaliação Google",
-    score: "4,9",
+    score: "4,9/5",
     reviewCount: "60+",
     reviewLabel: "avaliações reais",
   },
@@ -318,10 +330,14 @@ export const pricingSection = {
   eyebrow: "Investimento",
   title: "O programa dura 3 meses.",
   titleLine2: "O valor pode ser dividido em até 12 vezes.",
+  highlightsLabel: "Do programa",
   highlights: [
     "3 meses de programa",
     "2 sessões por semana, de 50 minutos",
     "Cerca de 24 encontros com a equipe",
+  ],
+  specialtiesLabel: "Inclui",
+  specialties: [
     "Psicoterapia",
     "Massoterapia terapêutica",
     "Yoga adaptada",
@@ -335,14 +351,14 @@ export const pricingSection = {
   planPrice: "12x de R$297,00",
   coupleNote:
     "Existe também o Plano Casal 60+, para quem quer fazer o programa junto.",
-  cta: "Quero saber as condições",
+  cta: "Quero conhecer o investimento",
   microcopy:
     "A avaliação inicial é gratuita. As condições de pagamento você combina direto com a nossa equipe.",
 };
 
 export const faqSection = {
   eyebrow: "Dúvidas frequentes",
-  title: "Tudo o que você precisa saber antes de dar o primeiro passo.",
+  title: "Tire suas dúvidas antes de agendar",
   items: [
     {
       question: "Preciso parar meus remédios ou a terapia que já faço?",
@@ -389,7 +405,7 @@ export const faqSection = {
 
 export const finalCtaSection = {
   eyebrow: "Primeiro passo",
-  title: "Você já tentou tratar uma parte de cada vez. Falta tentar o conjunto.",
+  title: "Você já tentou uma parte. Agora falta o conjunto.",
   subtitle:
     "Comece pela avaliação gratuita: 50 minutos, presencial, sem compromisso. Nossa equipe agenda o seu horário pelo WhatsApp.",
   cta: "Quero agendar minha avaliação gratuita",
