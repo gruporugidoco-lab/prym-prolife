@@ -34,7 +34,7 @@ export function FadeIn({
 interface SectionHeaderProps {
   eyebrow?: string;
   title: React.ReactNode;
-  subtitle?: string;
+  subtitle?: React.ReactNode;
   align?: "left" | "center";
   light?: boolean;
   className?: string;

@@ -23,13 +23,13 @@ export function HeroSection() {
         priority
         quality={100}
         sizes="100vw"
-        className="pointer-events-none -z-10 object-cover object-[48%_center] max-md:object-[38%_22%] md:max-lg:object-[52%_center] lg:object-[46%_center]"
+        className="pointer-events-none -z-10 object-cover object-[48%_center] max-md:object-[78%_32%] md:max-lg:object-[52%_center] lg:object-[46%_center]"
       />
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-[5] bg-gradient-to-b from-[#f8f7f3]/92 via-[#f8f7f3]/72 to-[#f8f7f3]/35 md:hidden"
       />
-      <div className="section-container px-5 pb-14 pt-8 md:px-8 md:pb-14 md:pt-12 lg:px-12 lg:pb-20 lg:pt-16">
+      <div className="section-container px-8 pb-14 pt-8 md:pb-14 md:pt-12 lg:px-12 lg:pb-20 lg:pt-16">
         <div className="grid items-center gap-6 lg:min-h-[360px] lg:grid-cols-[45fr_55fr] lg:gap-8">
           <div className="relative z-10 max-w-[510px]">
             <FadeIn>
@@ -75,7 +75,7 @@ export function HeroSection() {
                   <Link href="#incluso">{hero.secondaryCta}</Link>
                 </Button>
               </div>
-              <p className="text-body-sm mt-3.5 max-w-[430px] text-pretty text-navy-900/60">
+              <p className="mt-3.5 max-w-[430px] text-pretty text-sm leading-relaxed text-navy-900/60">
                 {hero.ctaMicrocopy}
               </p>
             </FadeIn>

@@ -52,14 +52,20 @@ export function IncludedSection() {
               Um plano de 3 meses
             </>
           }
-          subtitle={includedSection.subtitle}
+          subtitle={
+            <>
+              Duas sessões por semana, montadas a partir{" "}
+              <br className="md:hidden" />
+              da sua avaliação — não um pacote genérico.
+            </>
+          }
           className="section-header-spacing"
           subtitleClassName="mt-3 md:mt-4"
         />
 
         <div className="section-content-gap mx-auto flex max-w-5xl flex-col items-center">
           <div className="section-content-gap flex w-full flex-col items-center lg:flex-row lg:items-stretch lg:justify-center">
-            <FadeIn className="w-full max-w-[320px] sm:max-w-[280px]">
+            <FadeIn className="w-full max-w-[520px] sm:max-w-[280px]">
               <article className="flex h-full min-h-0 flex-col overflow-hidden rounded-2xl bg-navy-950 shadow-lg shadow-navy-950/10 sm:min-h-[420px]">
                 <div className="p-3 pb-0">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
